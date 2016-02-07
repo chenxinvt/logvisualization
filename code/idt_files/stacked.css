@@ -1,0 +1,65 @@
+* {
+	font-size: 10px !important;
+}
+
+h2{
+	font-size: 14px !important;
+}
+
+#zoom_chart rect {
+	fill: #000;
+}
+
+#zoom_chart path.area {
+	fill: #000;
+	fill-opacity: .75;
+}
+
+#zoom_chart .axis line, #zoom_chart .grid line {
+	stroke-width: .5px;
+	shape-rendering: crispEdges;
+}
+
+#zoom_chart .grid line {
+	stroke: #333;
+}
+
+#zoom_chart .grid line.minor {
+	stroke-opacity: .5;
+}
+
+#zoom_chart .grid text {
+	display: none;
+}
+
+#zoom_chart .axis line {
+	stroke: #000;
+}
+
+#zoom_chart .grid path, #zoom_chart .axis path {
+	display: none;
+}
+#zoom_chart .brush, #zoom_chart .extent {
+	stroke: #fff;
+	fill: #fff;
+	fill-opacity: .5;
+	shape-rendering: crispEdges;
+}
+#zoom_chart_legend {
+	text-align: center;
+}
+#zoom_chart_legend li {
+	list-style: none;
+	display: inline-block;
+	margin: 4px;
+	cursor: pointer;
+	padding: 3px 6px;
+}
+#zoom_chart_legend li:hover {
+	color: #000 !important;
+	background: #fff !important;
+}
+#zoom_chart_legend .error_excluded {
+	color: #ccc !important;
+	background: #fff !important;
+}

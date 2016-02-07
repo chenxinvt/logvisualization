@@ -1,0 +1,38 @@
+/* data table styles */
+#grid {
+	margin-left: 60px;
+	width: 900px;
+}
+.row, .header {
+	clear: both;
+	font-size: 12px !important;
+	line-height: 18px;
+	height: 18px;
+}
+.row:hover {
+	background:rgba(227,119,194,0.3) !important;
+}
+.row:nth-child(odd) {
+	background: rgba(0,0,0,0.05);
+}
+.header {
+	font-weight: bold;
+	background: #DDD;
+}
+.cell {
+	float: left;
+	overflow: hidden;
+	white-space: nowrap;
+	width: 80px;
+	height: 18px;
+	padding: 0 8px;
+}
+.col-0 {
+	width: 110px;
+}
+.col-2 {
+	width: 60px;
+}
+.col-3 {
+	width: 180px;
+}

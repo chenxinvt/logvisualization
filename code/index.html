@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta http-equiv="Content-Type" content="text/html;charset=utf-8"/>
+		<script type="text/javascript" src="./idt_files/libs/jquery-1.11.1.min.js"></script>
+		<script type="text/javascript" src="./idt_files/libs/d3.v3.min.js"></script>
+		<script type="text/javascript" src="./idt_files/libs/d3.parcoords.js"></script>
+		<script type="text/javascript" src="./idt_files/libs/nv.d3.js"></script>
+		<script type="text/javascript" src="./idt_files/libs/divgrid.js"></script>
+		<script type="text/javascript" src="./idt_files/idt.js"></script>
+		<link type="text/css" rel="stylesheet" href="./idt_files/libs/d3.parcoords.css">
+		<link type="text/css" rel="stylesheet" href="./idt_files/libs/nv.d3.css" >
+		<link type="text/css" rel="stylesheet" href="./idt_files/stacked.css" />
+		<link type="text/css" rel="stylesheet" href="./idt_files/grid.css" />
+		<link type="text/css" rel="stylesheet" href="./idt_files/idt.css" />
+	</head>
+	<body>
+		<div id="charts">
+
+			<div id="zoom_chart">
+				<ul id="zoom_chart_legend" style="display:none;">
+
+				</ul>
+				<h2>Visits and Errors across Time:</h2>
+				<script type="text/javascript" src="./idt_files/stacked.js"></script>
+			</div>
+			<div id="chart" style="width:1264px; height:240px; padding-left: 16px;">
+				<svg></svg>
+			</div>
+			<script src="./idt_files/stackedArea.js" type="text/javascript"></script>
+			<p style="clear:both;">
+				<h2 style="float:left;">Error Details: <span id="time_range"></span></h2>
+
+				<div style="float:right; margin-right:120px;">
+					<label id="lblPredicate" for="sltPredicate">Para Cord Brush Selection Logic: </label>
+					<select id="sltPredicate">
+						<option>AND</option>
+						<option>OR</option>
+					</select>
+					<button id="btnReset">
+						Reset Brushes
+					</button>
+				</div>
+			</p>
+			<div id="para_cords" class="parcoords" style="height:260px; clear:both;">
+				<script id="brushing" src="./idt_files/para_cords.js"></script>
+			</div>
+		</div>
+		<div id="grid"></div>
+	</body>
+</html>

@@ -1,0 +1,5 @@
+1. Unpack "scholar_log.sql.zip" to get "scholar_log.sql"
+2. Directly import the "scholar_log.sql" into a MySQL database (A schema named "scholar_log" with a single table named "all_errors" will be generated. There are about 1.5 million records in the table, so the import can take quite a while to complete)
+3. Open "code/idt_files/php/db.php" and change db parameters following the comments.
+4. Drop "code" to a web server that supports PHP and grant proper access to it.
+5. Use the tool by visiting the URL that points to "code/index.html".
