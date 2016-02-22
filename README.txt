@@ -1,1 +1,1 @@
-This folder is for log visualization.
+This visualization can be used to help Scholar system administrators to identify performance issues and suspicious user behaviors. We implemented two types of visualizations: Stacked Area View (Context + Focus) with Brushing and Parallel Coordinates View, Our implementation for visualization and interaction is all based on Javascript, specifically the jQuery and d3 libraries. The original log dataset is 145G text files which contains 685 million records covering 245 days of log.
